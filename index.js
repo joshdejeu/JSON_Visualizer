@@ -2,8 +2,6 @@ import data from './data.json'  assert {type: 'json'};
 import data2 from './data2.json'  assert {type: 'json'};
 console.log(data2);
 
-var cnvs = document.getElementById('canvas');
-
 //get count of top-level properties
 let count = Object.keys(data2).length
 
@@ -18,8 +16,10 @@ for(var i = 0; i < count; i++){
         case "string":
             // break;
         case "boolean":
-            // break;
+            formatString();
+            break;
         case "object":
+            formatObject();
             break;
         case "NULL":
             break;
@@ -28,4 +28,17 @@ for(var i = 0; i < count; i++){
     }
 }
 
+var viz = document.getElementById('visualizer');
 
+function formatString(){
+}
+
+function formatObject(){
+    var h1 = document.createElement('h1');
+    h1.id = "object";
+    var ul = document.createElement('ul');
+    for(var j = 0; j < length; j++){
+        ul.appendChild(li);
+    }
+    // viz.appendChild(div);
+}
