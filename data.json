@@ -1,0 +1,9 @@
+{
+    "first_name": "John",
+    "last_name": "Doe",
+    "contacts": {
+        "phone": "123-456-7899",
+        "email": "johndoe@gmail.com"
+    },
+    "pets": ["dog","cat","fish"]
+}
