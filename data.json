@@ -6,6 +6,14 @@
         "phone": "123-456-7899",
         "email": "johndoe@gmail.com"
     },
-    "pets": ["dog","cat","fish"]
+    "pets": ["dog","cat","fish"],
+    "fname": "John",
+    "lname": "Doe",
+    "hasCar": false,
+    "info": {
+        "phone": "123-456-7899",
+        "email": "johndoe@gmail.com"
+    },
+    "farm": ["dog","cat","fish"]
 
 }
