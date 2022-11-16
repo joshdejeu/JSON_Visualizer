@@ -40,39 +40,9 @@ function processData(JSONstring)
     }
 }
 
+processData(data)
 
-//get count of top-level properties
-let count = Object.keys(data).length
 
-//go through each top-level property
-for(var i = 0; i < count; i++){
-    var prop = Object.values(data)[i];
-    var keys = Object.keys(data);
-    console.log(Array.isArray(prop));
-    //check for all different types of properties
-    switch(typeof(prop)){
-        case "number":
-            // break;
-        case "string":
-            formatString(prop,keys[i]);
-            break;
-        case "boolean":
-            formatBoolean(prop,keys[i]);
-            break;
-        case "object":
-            if(Array.isArray(prop))
-            {
-                formatArray(prop,keys[i]);
-            }else{
-                formatObject(prop,keys[i]);
-            }
-            break;
-        case "NULL":
-            break;
-        case "undefined":
-            break;
-    }
-}
 function formatBoolean(prop, name){
     //HTML div which everything gets appended to
     let viz = document.getElementById('visualizer');
